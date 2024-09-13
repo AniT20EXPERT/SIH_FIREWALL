@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Page</title>
+    <link rel="stylesheet" href="user_management.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="Images/logo.png" alt="Website Logo">
+            </div>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </header>
+    <main>
+        <div class="user-management-container">
+            <h2>Users Management</h2>
+            <button class="user-action-btn">Remove User</button>
+            <button class="user-action-btn">Add User</button>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Users Name</th>
+                        <th>Status</th>
+                        <th>Policy Group</th>
+                        <th>Alerts Triggered</th>
+                        <th>Groups</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic Rows Will Be Injected Here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="user_management.js"></script>
+</body>
+</html>
