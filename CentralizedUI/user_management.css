@@ -133,3 +133,149 @@ table tr:hover {
 .view-details-btn:hover {
     background-color: #333;
 }
+
+
+
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%; /* Set width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Apply Policy Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 400px; /* Could be dynamic based on content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+.close-btn-apply {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn-apply:hover,
+.close-btn-apply:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Popup Form Styles */
+#applyPolicyForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#applyPolicyForm label {
+    font-size: 14px;
+    color: #555;
+}
+
+#policyGroupId {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s;
+}
+
+#policyGroupId:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+#applyPolicyForm button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#applyPolicyForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Header Styling */
+.modal-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Extra styling for form elements */
+#applyPolicyForm p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
