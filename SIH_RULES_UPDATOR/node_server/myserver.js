@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 
 //connecting db
 
-mongoose.connect('mongodb+srv://anirudhhadalaldpsv:LxQ84J6W8bHTt6@mycluster.zqon3.mongodb.net/?retryWrites=true&w=majority&appName=mycluster')
+mongoose.connect('mongodb+srv://anirudhhadalaldpsv:<password>@mycluster.zqon3.mongodb.net/?retryWrites=true&w=majority&appName=mycluster')
 .then(()=>{
     try{
         console.log("connected db succesfully");
