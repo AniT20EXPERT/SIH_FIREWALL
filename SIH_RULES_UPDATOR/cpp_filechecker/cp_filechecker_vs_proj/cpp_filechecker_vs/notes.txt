@@ -1,0 +1,57 @@
+
+windows sdk
+windows development kit
+
+
+
+nodejs server with cpp exe interactions 
+
+WFP APPLICATION exe constantly accesses info file which has all the WFP instructions.
+this info file is stored somewhere in pc local. every 1 second my cpp application access our nodejs server (with db) and gets the schema info file with info as given by ui. 
+And overwrites the old schema file in local pc with my new schema file.(only if changes are observed).
+
+
+
+websockets c++ and nodejs
+sha256 hashing algo
+mongodb collections
+
+
+
+
+
+
+1)setup node js server with mongodb 
+	
+	setup route to get file hash (sha256) from collections for the document
+	setup route to get file content
+2) cpp application that fetches every 5 mins the route to get file hash
+	converts the local instruction file to hash (sha256)
+	COMPARES THE old local file hash with the newly fetched file hash, if different then 	fetches for file content
+	overwrite the local file with new file
+
+	this file is json
+
+
+
+
+************************
+first start the server with no rules document in mongodb
+
+UI makes updates and creates rule document which is posted to /addrule
+
+my cpp application then fetches the rule body and saves it to instuction_file folder (from where WFP cpp application accesses it ) and calculates its hash, now every 5 seconds application fetches hash from server and compares the 2 hashes (local rule_file hash and latest rule_file hash on server).
+whenever changes are observed then it fetches new rule_file body and overwrites the local rule_file and again computes hash.
+this cycle keeps repeating
+
+
+compare two json strings
+
+
+
+1)start nodejs server
+2)if mongo is not empty then first make a PUT operation with new rule
+if mongo is empty then directly make a POST opertation with new rule
+3) run cpp application, then observe changes
+
+

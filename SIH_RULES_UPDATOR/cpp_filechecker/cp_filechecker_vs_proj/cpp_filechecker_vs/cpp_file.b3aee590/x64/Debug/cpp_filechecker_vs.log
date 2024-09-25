@@ -1,0 +1,3 @@
+﻿  The vcpkg manifest was disabled, but we found a manifest file in C:\Users\aniru\Downloads\SIH_RULES_UPDATOR\cpp_filechecker\cp_filechecker_vs_proj\cpp_filechecker_vs\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  main.cpp
+  cpp_filechecker_vs.vcxproj -> C:\Users\aniru\Downloads\SIH_RULES_UPDATOR\cpp_filechecker\cp_filechecker_vs_proj\cpp_filechecker_vs\x64\Debug\cpp_filechecker_vs.exe
