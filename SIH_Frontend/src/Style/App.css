@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 100px; 
+  overflow: auto; 
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 10px 0;
+}

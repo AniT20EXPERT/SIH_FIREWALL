@@ -1,0 +1,113 @@
+.login-page.body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.login-page {
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.login-page.login-container {
+  background-color: #fff; 
+  padding: 40px 30px; 
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+  width: 400px; 
+  text-align: center; 
+}
+
+
+
+
+
+
+
+
+
+
+.login-page .login-container {
+  background-color: #fff; /* White background for the login form */
+  padding: 40px 30px; /* Adjust padding: 40px top/bottom and 30px left/right */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 40px auto;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.login-page .login-container img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 25px;
+  animation: fadeIn 1s ease-out;
+}
+
+.login-page .login-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.login-container input {
+  width: 100%; 
+  padding: 12px; 
+  margin-bottom: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 50px; 
+  background-color: #f9f9f9; 
+  font-size: 16px; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); 
+  outline: none;
+}
+
+.login-page .login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.login-page .login-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.login-page .forgot-password {
+  margin-top: 15px;
+}
+
+.login-page .forgot-password a {
+  color: #3498db;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-page .forgot-password a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Add your animations here if needed */
