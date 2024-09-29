@@ -27,7 +27,11 @@ app.listen(3000, ()=>{
 });
 
 
-
+function hashRequestBody(reqBody) {
+    const hash = crypto.createHash('sha256');
+    hash.update(JSON.stringify(reqBody));
+    return hash.digest('hex');
+  }
 
 
 
@@ -64,6 +68,7 @@ app.post('/addrule', async (req, res)=> {
 
 app.put('/changerule', async (req, res)=> {
     try{
+        rule_hash = hashRequestBody(req.body);
         const update_rule = await Rules.findOneAndReplace({ type: 'rule' }, req.body);
         if(!update_rule) {
             return res.status(404).json({message : "Rule not found"});
