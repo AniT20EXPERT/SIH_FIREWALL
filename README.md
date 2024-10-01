@@ -29,5 +29,20 @@ This project implements a firewall that performs application context-aware block
 
 4. **Local Firewall Software (WFP_LOCAL_SOFTWARE)**: The WFP driver applies the rules from the `rule_file.json` file to enforce context-aware blocking on applications.
 
+## Security of the `rule_file.json` File
+
+Ensuring the integrity and confidentiality of the `rule_file.json` file is critical to the security of the firewall. In future iterations of this project, we plan to implement the following measures to ensure that the `rule_file.json` file is accessed and modified only by the **SIH_RULES_UPDATER**:
+
+1. **File Permissions and Access Control**: 
+   The `rule_file.json` file will have restricted file permissions, allowing only the local **SIH_RULES_UPDATER** process to read or write to the file. Unauthorized processes will be denied access to prevent tampering or accidental modification.
+
+2. **Authentication and Authorization**:
+   The **SIH_RULES_UPDATER** will be authenticated using process-level access control, ensuring only the trusted application can make changes. A security token or certificate-based authentication will be implemented to verify that the requestor is the legitimate SIH_RULES_UPDATER process.
+
+3. **Encryption at Rest**:
+   The `rules_json` file will be encrypted while stored locally. This ensures that even if the file is accessed by an unauthorized party, the contents will remain unreadable without the correct decryption key, which will only be available to **SIH_RULES_UPDATER**.
+
+4. **Hash Integrity Checks**:
+   In addition to controlling access, hash-based integrity checks will be used to detect any unauthorized modifications to the `rules_json` file. Any changes that have not been initiated by **SIH_RULES_UPDATER** will trigger an alert, and the original rules will be restored from the server.
 
 
