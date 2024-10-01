@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KMDF Driver3", "KMDF Driver3.vcxproj", "{12A02053-C135-4382-95A1-56050329664A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM64 = Release|ARM64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|ARM64.Build.0 = Debug|ARM64
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|Win32.Build.0 = Debug|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|Win32.Deploy.0 = Debug|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|x64.ActiveCfg = Debug|x64
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|x64.Build.0 = Debug|x64
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|x64.Deploy.0 = Debug|x64
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|x86.ActiveCfg = Debug|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|x86.Build.0 = Debug|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Debug|x86.Deploy.0 = Debug|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Release|ARM64.ActiveCfg = Release|ARM64
+		{12A02053-C135-4382-95A1-56050329664A}.Release|ARM64.Build.0 = Release|ARM64
+		{12A02053-C135-4382-95A1-56050329664A}.Release|ARM64.Deploy.0 = Release|ARM64
+		{12A02053-C135-4382-95A1-56050329664A}.Release|Win32.ActiveCfg = Release|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Release|Win32.Build.0 = Release|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Release|Win32.Deploy.0 = Release|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Release|x64.ActiveCfg = Release|x64
+		{12A02053-C135-4382-95A1-56050329664A}.Release|x64.Build.0 = Release|x64
+		{12A02053-C135-4382-95A1-56050329664A}.Release|x64.Deploy.0 = Release|x64
+		{12A02053-C135-4382-95A1-56050329664A}.Release|x86.ActiveCfg = Release|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Release|x86.Build.0 = Release|Win32
+		{12A02053-C135-4382-95A1-56050329664A}.Release|x86.Deploy.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3337AEF-862D-47A0-AF0A-7329F331441F}
+	EndGlobalSection
+EndGlobal

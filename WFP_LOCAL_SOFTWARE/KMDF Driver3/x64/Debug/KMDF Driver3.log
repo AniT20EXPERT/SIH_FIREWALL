@@ -1,0 +1,19 @@
+﻿  Building 'KMDF Driver3' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\KMDFDriver3.inf
+  Stamping [Version] section with DriverVer=09/26/2024,21.5.26.468
+  KMDF Driver3.vcxproj -> C:\Users\TANAY SHAH\source\repos\KMDF Driver3\x64\Debug\KMDFDriver3.sys
+  Driver is 'Universal'.
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\TANAY SHAH\source\repos\KMDF Driver3\x64\Debug\KMDF Driver3\kmdfdriver3.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\TANAY SHAH\source\repos\KMDF Driver3\x64\Debug\KMDF Driver3\kmdfdriver3.cat
+  
