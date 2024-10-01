@@ -21,13 +21,13 @@ This project implements a firewall that performs application context-aware block
 
 ## How it Works
 
-1. **Frontend (SIH_frontend)**: Administrators interact with the React UI to manage firewall rules. The UI communicates with the Node.js server via HTTP requests (PUT, POST) to update the `rules_json` file stored in the MongoDB database.
+1. **Frontend (SIH_frontend)**: Administrators interact with the React UI to manage firewall rules. The UI communicates with the Node.js server via HTTP requests (PUT, POST) to update the `rule_file.json` file stored in the MongoDB database.
    
 2. **Node.js Server (SIH_RULES_UPDATER)**: This server processes rule updates from the frontend and stores them in the database. It also provides a JSON file for the local software to fetch and apply updates.
 
-3. **Hash-based Version Control (SIH_RULES_UPDATER)**: A C++ application calculates the hash of the local `rules_json` file and compares it with the server version. If the hash differs, the new rules file is fetched and applied locally.
+3. **Hash-based Version Control (SIH_RULES_UPDATER)**: A C++ application calculates the hash of the local `rule_file.json` file and compares it with the server version. If the hash differs, the new rules file is fetched and applied locally.
 
-4. **Local Firewall Software (WFP_LOCAL_SOFTWARE)**: The WFP driver applies the rules from the `rules_json` file to enforce context-aware blocking on applications.
+4. **Local Firewall Software (WFP_LOCAL_SOFTWARE)**: The WFP driver applies the rules from the `rule_file.json` file to enforce context-aware blocking on applications.
 
 
 
