@@ -2,16 +2,16 @@
 
 
 ## Overview
-This project implements a firewall that performs application context-aware blocking. It features a local running software component that applies firewall rules based on the contents of a `rules_json` file. The system includes a Node.js server for rule management and a React-based admin UI for updating firewall rules. The project uses a centralized management system with hash-based version control for updating firewall rules across all components.
-(Path of rules_json: SIH_RULES_UPDATOR/cpp_filechecker/instruction_file/rules_json)
+This project implements a firewall that performs application context-aware blocking. It features a local running software component that applies firewall rules based on the contents of a `rule_file.json` file. The system includes a Node.js server for rule management and a React-based admin UI for updating firewall rules. The project uses a centralized management system with hash-based version control for updating firewall rules across all components.
+(Path of rules_json: SIH_RULES_UPDATOR/cpp_filechecker/instruction_file/rule_file.json)
 ## Project Structure
 ### 1. WFP_LOCAL_SOFTWARE
 - This folder contains the **Windows Filtering Platform (WFP)** driver code written in C++ using Visual Studio.
-- The local software applies firewall rules from the `rules_json` file to block/allow application-level traffic based on context-aware policies.
+- The local software applies firewall rules from the `rule_file.json` file to block/allow application-level traffic based on context-aware policies.
 
 ### 2. SIH_RULES_UPDATER
 - This folder includes two main components:
-  - **C++ Hash-based Version Controller**: Ensures that the latest version of the `rules_json` file is always used by calculating the hash of the file and checking for changes.
+  - **C++ Hash-based Version Controller**: Ensures that the latest version of the `rule_file.json` file is always used by calculating the hash of the file and checking for changes.
   - **Node.js Server**: Hosts a REST API that allows the frontend to push and update rules in the database. The updated `rules_json` file is fetched by the local C++ software when changes are detected.
 
 ### 3. SIH_frontend
