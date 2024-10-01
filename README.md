@@ -3,7 +3,7 @@
 
 ## Overview
 This project implements a firewall that performs application context-aware blocking. It features a local running software component that applies firewall rules based on the contents of a `rules_json` file. The system includes a Node.js server for rule management and a React-based admin UI for updating firewall rules. The project uses a centralized management system with hash-based version control for updating firewall rules across all components.
-
+(Path of rules_json: SIH_RULES_UPDATOR/cpp_filechecker/instruction_file/rules_json)
 ## Project Structure
 ### 1. WFP_LOCAL_SOFTWARE
 - This folder contains the **Windows Filtering Platform (WFP)** driver code written in C++ using Visual Studio.
